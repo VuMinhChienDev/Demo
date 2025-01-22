@@ -1,17 +1,64 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900&display=swap');
 
 :root{
     --primary-color: #FF6B6B;
+    --black: #000;
+    --text-color:#333;
+    --white: #fff;
+    --white-muted: #f8f8f8b4;
 
+    // Default layout
+
+    --default-layout-header-height: 60px; 
+    --default-layout-width: 1150px; 
+    --default-layout-horizontal-spacer: 24px;
 }
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 html{
-
+  font-size: 62.5%;
 }
 body{
-font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat', 'SofiaPro', sans-serif;
+font-size: 1.6rem;
+line-height: 1.5;
+text-rendering: optimizeSpeed;
+color: var(--text-color);
 
+}
+
+button, input
+[tabindex]{
+  outline: none;
+  border: none;
+}
+a[href]{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+//fonts emmneded
+@font-face{
+  font-family: 'Montserrat';
+  src: url('/public/fonts/Montserrat-Regular.ttf');
+  font-weight: 400;
+}
+@font-face{
+  font-family: 'Montserrat';
+  src: url('/public/fonts/Roboto-Regular.ttf');
+  font-weight: 400;
+}
+@font-face{
+  font-family: 'SofiaPro';
+  src: url('/public/fonts/Roboto-Bold.ttf');
+  font-weight: 700;
+}
+@font-face{
+  font-family: 'Roboto';
+  src: url('/public/fonts/Roboto-Italic.ttf');
+  font-weight: 600;
 }

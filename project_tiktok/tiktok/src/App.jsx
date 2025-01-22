@@ -1,32 +1,23 @@
-import{Fragment} from'react';
-// import './components/GlobalStyles/';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { publicRoutes } from '~/routes/index';
+import { publicRoutes } from '~/routes';
 import { DefaultLayout } from '~/components/Layout';
+import { Fragment } from 'react';
 
 function App() {
     return (
         <Router>
             <div className="App">
                 <Routes>
-                    
                     {publicRoutes.map((route, index) => {
-                        // const Layout = route.layout === null ? Fragment : DefaultLayout;
-                        // const Page = route.Component;
-
-
-                        // sử lý logic
-                        const Page = route.Component;
-
+                        const Page = route.component;
                         let Layout = DefaultLayout;
 
-                        if(route.layout) {
+                        if (route.layout) {
                             Layout = route.layout;
                         } else if (route.layout === null) {
-                            Layout = Fragment
+                            Layout = Fragment;
                         }
 
-                        console.log(route);
                         return (
                             <Route
                                 key={index}
@@ -35,7 +26,6 @@ function App() {
                                     <Layout>
                                         <Page />
                                     </Layout>
-                                
                                 }
                             />
                         );
