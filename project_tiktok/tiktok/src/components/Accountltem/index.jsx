@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { FaCheck } from 'react-icons/fa';  
 import classNames from 'classnames/bind';
 import styles from './AccountItem.module.scss';
@@ -24,6 +25,9 @@ function AccountItem({ data }) {
         </div>
     );
 }
+AccountItem.propTypes = {
+    data: PropTypes.object.isRequired,
+};
 
 export default AccountItem;
 

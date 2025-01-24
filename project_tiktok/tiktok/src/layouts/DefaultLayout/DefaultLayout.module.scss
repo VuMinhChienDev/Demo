@@ -15,6 +15,7 @@
     max-width: 90%; /* Giữ chiều rộng tối đa nhưng co dãn */
     min-width: 300px; /* Giới hạn nhỏ nhất */
     margin: 0 auto; /* Căn giữa */
+    margin-top: var(--default-layout-header-height);
     display: flex;
     padding: 0 var(--default-layout-horizontal-spacer);
 }

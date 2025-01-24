@@ -1,5 +1,5 @@
-//layouts
-import {HeaderOnly} from '~/components/Layout';
+import Config from '~/config';
+import {HeaderOnly} from '~/layouts';
 
 import Home from '~/pages/Home';
 import Following from '~/pages/Following';
@@ -10,11 +10,13 @@ import Search from '~/pages/Search';
 //public roites
 
 const publicRoutes = [ 
-    {path:'/', Component: Home},
-    {path:'/following',Component: Following},
-    {path:'/profile',Component: Profile},
-    {path:'/upload',Component: Upload, layout : HeaderOnly},
-    {path:'/search',Component: Search, layout: null},
+    {path: Config.routes.home, Component: Home},
+    {path: Config.routes.following,Component: Following},
+    {path: Config.routes.profile,Component: Profile},
+    {path: Config.routes.upload,Component: Upload, layout : HeaderOnly},
+    {path: Config.routes.search,Component: Search, layout: null},
+    {path: Config.routes.live,Component: Live, layout: null},
+    
 
 ];
 const privateRoutes = [

@@ -1,32 +1,138 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faPlus,
-    faPaperPlane,
-    faMessage,
-} from '@fortawesome/free-solid-svg-icons';
-
-const PlusIcon = ({ width = '2rem', height = '2rem' }) => (
-    <FontAwesomeIcon 
-        icon={faPlus} 
-        width={width} 
+export const PlusIcon = ({ width = '2rem', height = '2rem', className }) => (
+    <svg
+        className={className}
+        width={width}
         height={height}
-    />
+        viewBox="0 0 16 16"
+        fill="currentColor"
+    >
+        <path d="M8 1.5a.5.5 0 0 1 .5.5v6h6a.5.5 0 0 1 0 1h-6v6a.5.5 0 0 1-1 0v-6h-6a.5.5 0 0 1 0-1h6v-6a.5.5 0 0 1 .5-.5z" />
+    </svg>
 );
 
-const MessageIcon = ({ width = '2rem', height = '2rem' }) => (
-    <FontAwesomeIcon 
-        icon={faPaperPlane} 
-        width={width} 
+export const MessageIcon = ({ width = '2rem', height = '2rem', className }) => (
+    <svg
+        className={className}
+        width={width}
         height={height}
-    />
+        viewBox="0 0 16 16"
+        fill="currentColor"
+    >
+        <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.471 1.178Z" />
+    </svg>
 );
 
-const InboxIcon = ({ width = '2rem', height = '2rem' }) => (
-    <FontAwesomeIcon 
-        icon={faMessage} 
-        width={width} 
+export const InboxIcon = ({ width = '2rem', height = '2rem', className }) => (
+    <svg
+        className={className}
+        width={width}
         height={height}
-    />
+        viewBox="0 0 16 16"
+        fill="currentColor"
+    >
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+    </svg>
 );
 
-export { PlusIcon, MessageIcon, InboxIcon }; 
+export const UserIcon = ({ width = '2rem', height = '2rem', className }) => (
+    <svg className={className} width={width} height={height} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+    </svg>
+);
+
+export const CoinIcon = ({ width = '2rem', height = '2rem', className }) => (
+    <svg className={className} width={width} height={height} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+    </svg>
+);
+
+export const SettingIcon = ({ width = '2rem', height = '2rem', className }) => (
+    <svg className={className} width={width} height={height} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+    </svg>
+);
+
+export const LanguageIcon = ({ width = '2rem', height = '2rem', className }) => (
+    <svg className={className} width={width} height={height} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
+    </svg>
+);
+
+export const HelpIcon = ({ width = '2rem', height = '2rem', className }) => (
+    <svg className={className} width={width} height={height} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+    </svg>
+);
+
+export const KeyboardIcon = ({ width = '2rem', height = '2rem', className }) => (
+    <svg className={className} width={width} height={height} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 5H4c-1.1 0-1.99.9-1.99 2L2 17c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-9 3h2v2h-2V8zm0 3h2v2h-2v-2zM8 8h2v2H8V8zm0 3h2v2H8v-2zm-1 2H5v-2h2v2zm0-3H5V8h2v2zm9 7H8v-2h8v2zm0-4h-2v-2h2v2zm0-3h-2V8h2v2zm3 3h-2v-2h2v2zm0-3h-2V8h2v2z"/>
+    </svg>
+);
+
+export const LogoutIcon = ({ width = '2rem', height = '2rem', className }) => (
+    <svg className={className} width={width} height={height} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+    </svg>
+);
+
+export const HomeIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 48 48"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M24.9505 9.84001C24.3975 9.38666 23.6014 9.38666 23.0485 9.84003L6.94846 23.04C6.45839 23.4418 6.2737 24.1083 6.48706 24.705C6.70041 25.3017 7.26576 25.7 7.89949 25.7H10.2311L11.4232 38.7278C11.5409 40.0149 12.6203 41 13.9128 41H34.0874C35.3799 41 36.4593 40.0149 36.577 38.7278L37.7691 25.7H40.1007C40.7345 25.7 41.2998 25.3017 41.5132 24.705C41.7266 24.1082 41.5419 23.4418 41.0518 23.04L24.9505 9.84001ZM26.0581 38.9H21.9421L21.3429 30.2H26.6573L26.0581 38.9ZM28.3339 38.9L28.9331 30.2H33.9835L33.0955 38.3149C33.0556 38.6745 32.7552 38.9 32.3927 38.9H28.3339ZM19.6663 38.9H15.6075C15.245 38.9 14.9446 38.6745 14.9047 38.3149L14.0167 30.2H19.0671L19.6663 38.9ZM34.0874 28.1H13.9128C13.5503 28.1 13.2499 27.8745 13.21 27.5149L12.722 23.6H35.278L34.79 27.5149C34.7501 27.8745 34.4497 28.1 34.0874 28.1ZM10.231 21.5L24 10.1L37.769 21.5H10.231Z"
+        ></path>
+    </svg>
+);
+
+export const UserGroupIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 48 48"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M18 12.5C15.5897 12.5 13.5849 14.5018 13.5849 17.0345C13.5849 19.5672 15.5897 21.569 18 21.569C20.4103 21.569 22.4151 19.5672 22.4151 17.0345C22.4151 14.5018 20.4103 12.5 18 12.5ZM10.5849 17.0345C10.5849 12.9017 13.8766 9.5 18 9.5C22.1234 9.5 25.4151 12.9017 25.4151 17.0345C25.4151 21.1673 22.1234 24.569 18 24.569C13.8766 24.569 10.5849 21.1673 10.5849 17.0345ZM18 29.8793C14.0801 29.8793 10.7403 32.5616 9.69697 36.2673C9.5473 36.7989 9.03833 37.1708 8.49337 37.0811L7.50662 36.9189C6.96166 36.8292 6.58837 36.3131 6.72325 35.7776C8.00732 30.6788 12.5509 26.8793 18 26.8793C23.449 26.8793 27.9927 30.6788 29.2767 35.7776C29.4116 36.3131 29.0383 36.8292 28.4934 36.9189L27.5066 37.0811C26.9617 37.1708 26.4527 36.7989 26.303 36.2673C25.2597 32.5616 21.9199 29.8793 18 29.8793Z"
+        ></path>
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M33 31.5371C32.2445 31.5371 31.5198 31.668 30.8447 31.9093C30.3246 32.0951 29.7189 31.9243 29.4549 31.4392L28.9769 30.5608C28.713 30.0757 28.8907 29.463 29.4009 29.2516C30.513 28.791 31.7285 28.5371 33 28.5371C37.4554 28.5371 41.1594 31.6303 42.2706 35.7812C42.4135 36.3147 42.0386 36.8308 41.4935 36.9196L40.5065 37.0804C39.9614 37.1692 39.4546 36.7956 39.2894 36.2686C38.4217 33.5 35.91 31.5371 33 31.5371Z"
+        ></path>
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M33 18.5C31.6193 18.5 30.5 19.6193 30.5 21C30.5 22.3807 31.6193 23.5 33 23.5C34.3807 23.5 35.5 22.3807 35.5 21C35.5 19.6193 34.3807 18.5 33 18.5ZM27.5 21C27.5 17.9624 29.9624 15.5 33 15.5C36.0376 15.5 38.5 17.9624 38.5 21C38.5 24.0376 36.0376 26.5 33 26.5C29.9624 26.5 27.5 24.0376 27.5 21Z"
+        ></path>
+    </svg>
+);
+
+export const LiveIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 32 32"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M7.78511 10.3334C6.95518 10.3334 6.33301 10.9556 6.33301 11.7855V20.2145C6.33301 21.0445 6.95518 21.6667 7.78511 21.6667H16.2141C17.044 21.6667 17.6662 21.0445 17.6662 20.2145V11.7855C17.6662 10.9556 17.044 10.3334 16.2141 10.3334H7.78511ZM25.6662 12.0001C25.6662 11.6319 25.9647 11.3334 26.3329 11.3334C26.7011 11.3334 26.9996 11.6319 26.9996 12.0001V15.3334H27.9996C28.3678 15.3334 28.6662 15.6319 28.6662 16.0001C28.6662 16.3683 28.3678 16.6667 27.9996 16.6667H26.9996V20.0001C26.9996 20.3683 26.7011 20.6667 26.3329 20.6667C25.9647 20.6667 25.6662 20.3683 25.6662 20.0001V16.6667H24.6662C24.298 16.6667 23.9996 16.3683 23.9996 16.0001C23.9996 15.6319 24.298 15.3334 24.6662 15.3334H25.6662V12.0001Z"
+        ></path>
+    </svg>
+); 
